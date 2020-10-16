@@ -1,0 +1,385 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88EE8FBF-0BA5-4DC6-AE59-42CE4AFCB4C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLDSV</RootNamespace>
+    <AssemblyName>QLDSV</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dangky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangky.Designer.cs">
+      <DependentUpon>Dangky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diem.Designer.cs">
+      <DependentUpon>Diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DS.cs">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds_PM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_PM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDN.Designer.cs">
+      <DependentUpon>FormDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hocphi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hocphi.Designer.cs">
+      <DependentUpon>Hocphi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lophoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lophoc.Designer.cs">
+      <DependentUpon>Lophoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BangdiemView.cs" />
+    <Compile Include="Monhoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monhoc.Designer.cs">
+      <DependentUpon>Monhoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\BangdiemMH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\BangdiemMH.Designer.cs">
+      <DependentUpon>BangdiemMH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BangdiemTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\BangdiemTK.Designer.cs">
+      <DependentUpon>BangdiemTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DSDonghocphi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\DSDonghocphi.Designer.cs">
+      <DependentUpon>DSDonghocphi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DSSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\DSSV.Designer.cs">
+      <DependentUpon>DSSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DSThihetmon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\DSThihetmon.Designer.cs">
+      <DependentUpon>DSThihetmon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Phieudiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Phieudiem.Designer.cs">
+      <DependentUpon>Phieudiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\XrptDSDonghocphi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\XrptDSDonghocphi.Designer.cs">
+      <DependentUpon>XrptDSDonghocphi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Xrpt_BangdiemMH.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Xrpt_BangdiemMH.Designer.cs">
+      <DependentUpon>Xrpt_BangdiemMH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Xrpt_BangDiemTongKet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Xrpt_BangDiemTongKet.Designer.cs">
+      <DependentUpon>Xrpt_BangDiemTongKet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Xrpt_DSSV.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Xrpt_DSSV.Designer.cs">
+      <DependentUpon>Xrpt_DSSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Xrpt_DSThihetmon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Xrpt_DSThihetmon.Designer.cs">
+      <DependentUpon>Xrpt_DSThihetmon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Xrpt_Phieudiem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Xrpt_Phieudiem.Designer.cs">
+      <DependentUpon>Xrpt_Phieudiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sinhvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sinhvien.Designer.cs">
+      <DependentUpon>Sinhvien.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dangky.resx">
+      <DependentUpon>Dangky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diem.resx">
+      <DependentUpon>Diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDN.resx">
+      <DependentUpon>FormDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hocphi.resx">
+      <DependentUpon>Hocphi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lophoc.resx">
+      <DependentUpon>Lophoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monhoc.resx">
+      <DependentUpon>Monhoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\BangdiemMH.resx">
+      <DependentUpon>BangdiemMH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\BangdiemTK.resx">
+      <DependentUpon>BangdiemTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\DSDonghocphi.resx">
+      <DependentUpon>DSDonghocphi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\DSSV.resx">
+      <DependentUpon>DSSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\DSThihetmon.resx">
+      <DependentUpon>DSThihetmon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Phieudiem.resx">
+      <DependentUpon>Phieudiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\XrptDSDonghocphi.resx">
+      <DependentUpon>XrptDSDonghocphi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Xrpt_BangdiemMH.resx">
+      <DependentUpon>Xrpt_BangdiemMH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Xrpt_BangDiemTongKet.resx">
+      <DependentUpon>Xrpt_BangDiemTongKet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Xrpt_DSSV.resx">
+      <DependentUpon>Xrpt_DSSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Xrpt_DSThihetmon.resx">
+      <DependentUpon>Xrpt_DSThihetmon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Xrpt_Phieudiem.resx">
+      <DependentUpon>Xrpt_Phieudiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sinhvien.resx">
+      <DependentUpon>Sinhvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS.xsc">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </None>
+    <None Include="DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS.xss">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </None>
+    <None Include="ds_PM.xsc">
+      <DependentUpon>ds_PM.xsd</DependentUpon>
+    </None>
+    <None Include="ds_PM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_PM.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ds_PM.xss">
+      <DependentUpon>ds_PM.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\QLDSV.Model.BangdiemView.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Teacher-male-icon-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Excel-48-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Keyboard-48-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\login-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\logout-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financial_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financial_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Add-24-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete-2-icon-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text-Edit-icon-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-icon-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo-icon-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Refresh-icon-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit-24-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diploma-Certificate-32-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
